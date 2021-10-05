@@ -1,84 +1,81 @@
 h1 {
     text-align: center;
-    size: 175%;
-
+    font-size: 400%;
+    padding-top: 5%;
 }
 
-.menu_item {
-    background-color: rgb(140, 143, 143);
-    border: 2px;
-    border-style: solid;
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 10px;
-}
-
-.menu_item .description {
-    clear: right;
-}
-
-.item_name {
-    text-align: center;
-    border: 2px;
-    border-style: solid;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 5px;
-    width: 30%;
-    float: right;
-    position: relative;
-    right: -12px;
-    top: -12px;
-}
-
-.menu_item h2 {
+body {
+    background-color: cadetblue;
+    margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    size: 125%;
-    font-weight: bold;
 }
 
-#Chicken {
+h2 {
+    text-align: center;
+    border: 4px;
+    border-style: solid;
+    margin-left: 70%;
+    margin-top: 0%;
+    position: relative;
+    top: -4px;
+    right: -4px;
+    font-size: 1.1em;
+}
+
+p {
+    font-size: 1.1em;
+    padding: 0% 5px;
+}
+
+.container {
+    float: left;
+    border: 4px;
+    border-style: solid;
+    background-color: rgb(42, 107, 29);
+    margin: 3%;
+}
+
+#item1 {
     background-color: pink;
 }
 
-#Beef {
-    background-color: salmon;
+#item2 {
+background-color: salmon;
 }
 
-#Sushi {
+#item3 {
     background-color: sandybrown;
 }
 
 /****desktop view****/
 @media (min-width: 992px) {
-    .float_child {
-        width: 33.33%;
+    .container {
+        width: 26.5%;
         float: left;
     }
 }
 
 /****tablet view****/
 
-@media (min-width:768px) and (max-width: 991px) {
-    #s1 {
-        width: 50%;
+@media (min-width: 768px) and (max-width: 991px) {
+    #container1 {
+        width: 43%;
         float: left;
     }
 
-    #s2 {
-        width: 50%;
+    #container2 {
+        width: 43%;
         float: right;
     }
 
-    #s3 {
-        width: 100%;
-        clear:both;
+    #container3 {
+        clear: both;
     }
 }
 
 /****mobile view****/
 @media (max-width: 767px) {
-    .float_child {
+    .container {
         width: 100%;
     }
 }
